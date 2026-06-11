@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield | Air University - Cyber Security Awareness Portal</title>
+    <meta name="description" content="Air University's Official Cyber Security Awareness Portal - Learn about cyber threats, protect yourself online">
+    <meta name="keywords" content="cybersecurity, cyber security, Air University, phishing, malware, ransomware, hacking, ddos, mitm">
+    <meta name="author" content="Fareeha Tahir, Zaid Siddiqui, junaid Mumtaz">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="cyber-shield-logo">
+                <div class="shield-ring"></div>
+                <div class="shield-ring"></div>
+                <div class="shield-ring"></div>
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h2>CYBERSHIELD</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p>INITIALIZING SECURE CONNECTION</p>
+            <div class="loading-status">
+                <div class="status-dot"></div>
+                <span>Air University Cyber Security Portal</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress">
+        <div class="scroll-bar" id="scrollBar"></div>
+    </div>
+
+    <!-- MATRIX BACKGROUND -->
+    <canvas class="matrix-canvas" id="matrix-canvas"></canvas>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <span class="logo-text">Cyber<span class="highlight">Shield</span></span>
+                <span class="uni-tag">AIR UNIVERSITY</span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a href="#threats" class="nav-link"><i class="fas fa-bug"></i> Threats</a></li>
+                <li class="nav-item"><a href="#attacks" class="nav-link"><i class="fas fa-skull-crossbones"></i> Attacks</a></li>
+                <li class="nav-item"><a href="#protection" class="nav-link"><i class="fas fa-lock"></i> Protection</a></li>
+                <li class="nav-item"><a href="#quiz" class="nav-link"><i class="fas fa-brain"></i> Quiz</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link"><i class="fas fa-users"></i> Team</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#threats" class="nav-link"><i class="fas fa-bug"></i> Threats</a></li>
+                <li><a href="#attacks" class="nav-link"><i class="fas fa-skull-crossbones"></i> Attacks</a></li>
+                <li><a href="#protection" class="nav-link"><i class="fas fa-lock"></i> Protection</a></li>
+                <li><a href="#quiz" class="nav-link"><i class="fas fa-brain"></i> Quiz</a></li>
+                <li><a href="#team" class="nav-link"><i class="fas fa-users"></i> Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">🛡️</span>
+                <span>CYBER SECURITY AWARENESS</span>
+                <span class="badge-year">2026</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">STAY SAFE IN THE</span>
+                <span class="gradient-text">DIGITAL WORLD</span>
+            </h1>
+            <p class="hero-subtitle">
+                Learn about cyber threats, protect yourself online, and become cyber aware.
+                Air University's official cybersecurity awareness portal.
+            </p>
+            <div class="hero-buttons">
+                <a href="#threats" class="btn btn-primary"><i class="fas fa-shield-alt"></i> Explore Threats</a>
+                <a href="#quiz" class="btn btn-outline"><i class="fas fa-brain"></i> Take Quiz</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="300">0</span>
+                    <span class="stat-label">Billion+ Phishing Emails/Day</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="95">0</span>
+                    <span class="stat-label">% Breaches from Human Error</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="11">0</span>
+                    <span class="stat-label">Sec Between Ransomware Attacks</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="cyber-orb">
+                <div class="orb-ring"></div>
+                <div class="orb-ring"></div>
+                <div class="orb-ring"></div>
+                <div class="orb-ring"></div>
+                <div class="orb-core"><i class="fas fa-shield-alt"></i></div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- THREAT DASHBOARD SECTION -->
+    <section class="threats-section" id="threats">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">THREAT LANDSCAPE</span>
+                <h2 class="section-title">Current <span class="gradient-text">Cyber Threats</span></h2>
+                <p class="section-subtitle">Understanding the threats that target individuals and organizations every day.</p>
+            </div>
+
+            <div class="threat-banner">
+                <div class="threat-header">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Live Threat Monitor</h3>
+                    <div class="threat-status danger">⚠ HIGH ALERT</div>
+                </div>
+                <div class="threat-grid">
+                    <div class="threat-item">
+                        <div class="threat-icon phishing"><i class="fas fa-fish"></i></div>
+                        <div class="threat-info">
+                            <span class="threat-name">Phishing Attacks</span>
+                            <div class="threat-bar-wrap">
+                                <div class="threat-bar" data-width="92%"></div>
+                            </div>
+                            <span class="threat-percent">92%</span>
+                        </div>
+                    </div>
+                    <div class="threat-item">
+                        <div class="threat-icon malware"><i class="fas fa-virus"></i></div>
+                        <div class="threat-info">
+                            <span class="threat-name">Malware</span>
+                            <div class="threat-bar-wrap">
+                                <div class="threat-bar" data-width="78%"></div>
+                            </div>
+                            <span class="threat-percent">78%</span>
+                        </div>
+                    </div>
+                    <div class="threat-item">
+                        <div class="threat-icon ransomware"><i class="fas fa-lock"></i></div>
+                        <div class="threat-info">
+                            <span class="threat-name">Ransomware</span>
+                            <div class="threat-bar-wrap">
+                                <div class="threat-bar" data-width="65%"></div>
+                            </div>
+                            <span class="threat-percent">65%</span>
+                        </div>
+                    </div>
+                    <div class="threat-item">
+                        <div class="threat-icon ddos"><i class="fas fa-network-wired"></i></div>
+                        <div class="threat-info">
+                            <span class="threat-name">DDoS Attacks</span>
+                            <div class="threat-bar-wrap">
+                                <div class="threat-bar" data-width="54%"></div>
+                            </div>
+                            <span class="threat-percent">54%</span>
+                        </div>
+                    </div>
+                    <div class="threat-item">
+                        <div class="threat-icon mitm"><i class="fas fa-random"></i></div>
+                        <div class="threat-info">
+                            <span class="threat-name">Man-in-the-Middle</span>
+                            <div class="threat-bar-wrap">
+                                <div class="threat-bar" data-width="41%"></div>
+                            </div>
+                            <span class="threat-percent">41%</span>
+                        </div>
+                    </div>
+                    <div class="threat-item">
+                        <div class="threat-icon social"><i class="fas fa-user-secret"></i></div>
+                        <div class="threat-info">
+                            <span class="threat-name">Social Engineering</span>
+                            <div class="threat-bar-wrap">
+                                <div class="threat-bar" data-width="87%"></div>
+                            </div>
+                            <span class="threat-percent">87%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATTACKS SECTION -->
+    <section class="attacks-section" id="attacks">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">ATTACK TYPES</span>
+                <h2 class="section-title">Know Your <span class="gradient-text">Enemy</span></h2>
+                <p class="section-subtitle">Click on any attack type to learn more about how it works and how to defend against it.</p>
+            </div>
+
+            <div class="attacks-grid">
+
+                <div class="attack-card" data-attack="phishing">
+                    <div class="card-icon"><i class="fas fa-fish"></i></div>
+                    <h3>Phishing</h3>
+                    <p class="card-short">Deceptive emails that steal your credentials</p>
+                    <div class="card-expanded">
+                        <p>Phishing is a social engineering attack where attackers impersonate trusted entities via email, SMS, or fake websites to steal passwords, credit card numbers, and personal data.</p>
+                        <div class="card-tags">
+                            <span class="tag danger">High Risk</span>
+                            <span class="tag">Email</span>
+                            <span class="tag">Social Engineering</span>
+                        </div>
+                        <div class="card-tip"><i class="fas fa-shield-alt"></i> Always verify sender email addresses before clicking any link.</div>
+                    </div>
+                    <span class="card-toggle">Learn More <i class="fas fa-chevron-down"></i></span>
+                </div>
+
+                <div class="attack-card" data-attack="malware">
+                    <div class="card-icon"><i class="fas fa-virus"></i></div>
+                    <h3>Malware</h3>
+                    <p class="card-short">Malicious software that damages systems</p>
+                    <div class="card-expanded">
+                        <p>Malware (malicious software) includes viruses, worms, trojans, spyware, and adware. It can steal data, corrupt files, spy on your activities, or give attackers remote control.</p>
+                        <div class="card-tags">
+                            <span class="tag danger">Critical</span>
+                            <span class="tag">Software</span>
+                            <span class="tag">System</span>
+                        </div>
+                        <div class="card-tip"><i class="fas fa-shield-alt"></i> Keep antivirus updated and avoid downloading from untrusted sources.</div>
+                    </div>
+                    <span class="card-toggle">Learn More <i class="fas fa-chevron-down"></i></span>
+                </div>
+
+                <div class="attack-card" data-attack="ransomware">
+                    <div class="card-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Ransomware</h3>
+                    <p class="card-short">Encrypts your files and demands payment</p>
+                    <div class="card-expanded">
+                        <p>Ransomware encrypts all your files and demands a ransom (usually in cryptocurrency) to restore access. Even after payment, recovery is not guaranteed.</p>
+                        <div class="card-tags">
+                            <span class="tag danger">Severe</span>
+                            <span class="tag">Encryption</span>
+                            <span class="tag">Financial</span>
+                        </div>
+                        <div class="card-tip"><i class="fas fa-shield-alt"></i> Regular offline backups are the best defense against ransomware.</div>
+                    </div>
+                    <span class="card-toggle">Learn More <i class="fas fa-chevron-down"></i></span>
+                </div>
+
+                <div class="attack-card" data-attack="ddos">
+                    <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>DDoS Attack</h3>
+                    <p class="card-short">Overwhelms servers with massive traffic</p>
+                    <div class="card-expanded">
+                        <p>Distributed Denial of Service attacks flood a server or network with traffic from thousands of compromised devices (botnets), making services unavailable to legitimate users.</p>
+                        <div class="card-tags">
+                            <span class="tag warning">High Risk</span>
+                            <span class="tag">Network</span>
+                            <span class="tag">Availability</span>
+                        </div>
+                        <div class="card-tip"><i class="fas fa-shield-alt"></i> Use DDoS protection services and traffic filtering solutions.</div>
+                    </div>
+                    <span class="card-toggle">Learn More <i class="fas fa-chevron-down"></i></span>
+                </div>
+
+                <div class="attack-card" data-attack="mitm">
+                    <div class="card-icon"><i class="fas fa-random"></i></div>
+                    <h3>Man-in-the-Middle</h3>
+                    <p class="card-short">Intercepts communication between two parties</p>
+                    <div class="card-expanded">
+                        <p>MITM attacks intercept and possibly alter communications between two parties who believe they're communicating directly. Common on unsecured public WiFi networks.</p>
+                        <div class="card-tags">
+                            <span class="tag danger">High Risk</span>
+                            <span class="tag">Network</span>
+                            <span class="tag">Interception</span>
+                        </div>
+                        <div class="card-tip"><i class="fas fa-shield-alt"></i> Use HTTPS and a VPN on public networks.</div>
+                    </div>
+                    <span class="card-toggle">Learn More <i class="fas fa-chevron-down"></i></span>
+                </div>
+
+                <div class="attack-card" data-attack="social">
+                    <div class="card-icon"><i class="fas fa-user-secret"></i></div>
+                    <h3>Social Engineering</h3>
+                    <p class="card-short">Manipulates people to reveal information</p>
+                    <div class="card-expanded">
+                        <p>Social engineering exploits human psychology rather than technical vulnerabilities. Attackers manipulate people into giving up passwords, clicking links, or granting access through trust.</p>
+                        <div class="card-tags">
+                            <span class="tag danger">Critical</span>
+                            <span class="tag">Human</span>
+                            <span class="tag">Manipulation</span>
+                        </div>
+                        <div class="card-tip"><i class="fas fa-shield-alt"></i> Always verify identities before sharing any sensitive information.</div>
+                    </div>
+                    <span class="card-toggle">Learn More <i class="fas fa-chevron-down"></i></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROTECTION SECTION -->
+    <section class="protection-section" id="protection">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">STAY SAFE</span>
+                <h2 class="section-title">How to <span class="gradient-text">Protect Yourself</span></h2>
+                <p class="section-subtitle">Essential practices everyone should follow to stay safe in the digital world.</p>
+            </div>
+
+            <div class="protection-grid">
+                <div class="protection-card">
+                    <div class="prot-icon"><i class="fas fa-key"></i></div>
+                    <h3>Strong Passwords</h3>
+                    <p>Use long, complex passwords with a mix of letters, numbers, and symbols. Use a password manager and never reuse passwords.</p>
+                    <ul class="prot-list">
+                        <li><i class="fas fa-check"></i> Minimum 12 characters</li>
+                        <li><i class="fas fa-check"></i> Use a password manager</li>
+                        <li><i class="fas fa-check"></i> Never reuse passwords</li>
+                    </ul>
+                </div>
+                <div class="protection-card">
+                    <div class="prot-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Enable 2FA</h3>
+                    <p>Two-factor authentication adds an extra layer of security beyond just your password. Enable it on all important accounts.</p>
+                    <ul class="prot-list">
+                        <li><i class="fas fa-check"></i> Use authenticator apps</li>
+                        <li><i class="fas fa-check"></i> Enable on email & banking</li>
+                        <li><i class="fas fa-check"></i> Backup recovery codes</li>
+                    </ul>
+                </div>
+                <div class="protection-card">
+                    <div class="prot-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3>Keep Software Updated</h3>
+                    <p>Software updates patch security vulnerabilities. Keeping your OS, browser, and apps updated is critical to your protection.</p>
+                    <ul class="prot-list">
+                        <li><i class="fas fa-check"></i> Enable automatic updates</li>
+                        <li><i class="fas fa-check"></i> Update all apps regularly</li>
+                        <li><i class="fas fa-check"></i> Patch promptly</li>
+                    </ul>
+                </div>
+                <div class="protection-card">
+                    <div class="prot-icon"><i class="fas fa-wifi"></i></div>
+                    <h3>Safe Browsing</h3>
+                    <p>Be cautious on public WiFi. Always look for HTTPS, use a VPN on public networks, and avoid accessing sensitive accounts.</p>
+                    <ul class="prot-list">
+                        <li><i class="fas fa-check"></i> Use a VPN</li>
+                        <li><i class="fas fa-check"></i> Check for HTTPS</li>
+                        <li><i class="fas fa-check"></i> Avoid public WiFi for banking</li>
+                    </ul>
+                </div>
+                <div class="protection-card">
+                    <div class="prot-icon"><i class="fas fa-database"></i></div>
+                    <h3>Backup Your Data</h3>
+                    <p>Regular backups protect you from ransomware and data loss. Follow the 3-2-1 rule for maximum protection.</p>
+                    <ul class="prot-list">
+                        <li><i class="fas fa-check"></i> 3 copies of data</li>
+                        <li><i class="fas fa-check"></i> 2 different media types</li>
+                        <li><i class="fas fa-check"></i> 1 offsite/offline backup</li>
+                    </ul>
+                </div>
+                <div class="protection-card">
+                    <div class="prot-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Stay Aware</h3>
+                    <p>Most attacks exploit human error. Stay educated, think before you click, and always verify unexpected requests for information.</p>
+                    <ul class="prot-list">
+                        <li><i class="fas fa-check"></i> Verify before you trust</li>
+                        <li><i class="fas fa-check"></i> Think before you click</li>
+                        <li><i class="fas fa-check"></i> Report suspicious activity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIZ SECTION -->
+    <section class="quiz-section" id="quiz">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">TEST YOUR KNOWLEDGE</span>
+                <h2 class="section-title">Cyber Security <span class="gradient-text">Quiz</span></h2>
+                <p class="section-subtitle">How cyber-aware are you? Take our quiz and find out!</p>
+            </div>
+
+            <div class="quiz-wrapper">
+                <div id="quiz-container">
+                    <!-- Quiz rendered by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="team-section" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">THE TEAM</span>
+                <h2 class="section-title">Meet the <span class="gradient-text">Creators</span></h2>
+                <p class="section-subtitle">This portal was built by students of Air University as part of a cybersecurity awareness initiative.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-astronaut"></i></div>
+                    <h3>Fareeha Tahir</h3>
+                    <p class="team-role">Lead Developer</p>
+                    <p class="team-bio">Cybersecurity enthusiast and web developer passionate about digital safety.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-ninja"></i></div>
+                    <h3>Zaid Siddiqui</h3>
+                    <p class="team-role">UI/UX Designer</p>
+                    <p class="team-bio">Focused on creating intuitive interfaces that educate users about online threats.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-shield"></i></div>
+                    <h3>Junaid Mumtaz</h3>
+                    <p class="team-role">Security Researcher</p>
+                    <p class="team-bio">Dedicated to researching and documenting modern cyber attack methodologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <div class="logo-icon"><i class="fas fa-shield-alt"></i></div>
+                        <span class="logo-text">Cyber<span class="highlight">Shield</span></span>
+                    </div>
+                    <p>Air University's official cybersecurity awareness portal. Empowering students to stay safe online.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#threats">Threats</a></li>
+                        <li><a href="#attacks">Attacks</a></li>
+                        <li><a href="#protection">Protection</a></li>
+                        <li><a href="#quiz">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Air University</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+                    <p><i class="fas fa-graduation-cap"></i> Department of Cyber Security</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberShield — Air University. Built by Fareeha Tahir, Maira Tahir &amp; Khurram Ali Saif.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
